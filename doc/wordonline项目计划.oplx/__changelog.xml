@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="campaign" date="2014-06-30T05:27:32.943Z" timestamp="2014-06-30T05:27:32.943Z">
+    <change idref="t2" to="t-1" to-position="1" resolved="yes">
+      <change idref="t2" attribute="title" type="string" to="社会化代码"/>
+    </change>
+    <change idref="t3" to="t-1" to-position="2" resolved="yes">
+      <change idref="t3" attribute="title" type="string" to="UE设计"/>
+    </change>
+    <change idref="t4" to="t-1" to-position="3" resolved="yes">
+      <change idref="t4" attribute="title" type="string" to="word项目整体集成"/>
+    </change>
+    <change idref="t1" attribute="title" type="string" from="Task 1" to="FlexUI" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Jinqn" date="2014-06-30T06:34:56.844Z" timestamp="2014-06-30T06:34:56.844Z">
+    <change idref="t4" from="t-1" from-position="3" resolved="yes">
+      <change idref="t4" attribute="title" type="string" to="word项目整体集成"/>
+    </change>
+    <change idref="t3" from="t-1" from-position="2" resolved="yes">
+      <change idref="t3" attribute="title" type="string" to="UE设计"/>
+    </change>
+    <change idref="t1" from="t-1" from-position="0" resolved="yes">
+      <change idref="t1" attribute="title" type="string" to="FlexUI"/>
+    </change>
+    <change idref="t8" to="t-1" to-position="0" resurrection="yes" resolved="yes">
+      <change idref="t8" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t8" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t8" attribute="title" type="string" to="社会化代码"/>
+    </change>
+    <change idref="t14" to="t-1" to-position="1" resolved="yes">
+      <change idref="t14" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t14" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t14" attribute="title" type="string" to="FlexUI"/>
+    </change>
+    <change idref="t15" to="t-1" to-position="2" resolved="yes">
+      <change idref="t15" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t15" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t15" attribute="title" type="string" to="word项目整体集成"/>
+    </change>
+    <change idref="t12" to="t-1" to-position="3" resolved="yes">
+      <change idref="t12" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t12" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t12" attribute="noEarlierThanConstraintDate" type="date" to="2014-07-15T01:00:00.000Z"/>
+      <change idref="t12" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t12" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t12" attribute="title" type="string" to="chorme下可以看整体效果"/>
+    </change>
+    <change idref="t13" to="t-1" to-position="4" resolved="yes">
+      <change idref="t13" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t13" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t13" attribute="noEarlierThanConstraintDate" type="date" to="2014-07-31T00:00:00.000Z"/>
+      <change idref="t13" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t13" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t13" attribute="title" type="string" to="发布第一个版本"/>
+    </change>
+    <change idref="t2" attribute="internalAssignments" type="string" from="" to="1" resolved="yes"/>
+    <change idref="t2" from="t-1" from-position="1" to="t8" to-position="0" resolved="yes"/>
+    <change idref="t10" to="t14" to-position="0" resolved="yes">
+      <change idref="t10" attribute="internalAssignments" type="string" from="" to="2"/>
+      <change idref="t10" attribute="title" type="string" to="FlexUI"/>
+    </change>
+    <change idref="t11" to="t15" to-position="0" resolved="yes">
+      <change idref="t11" attribute="internalAssignments" type="string" from="" to="3"/>
+      <change idref="t11" attribute="title" type="string" to="word项目 整体集成"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Jinqn" date="2014-06-30T07:04:32.421Z" timestamp="2014-06-30T07:04:32.421Z">
+    <change idref="t11" attribute="title" type="string" from="word项目 整体集成" to="rtcs服务压力测试" resolved="yes"/>
+    <change idref="t11" attribute="effort" type="real" from="28800" to="115200" resolved="yes"/>
+    <change idref="t16" to="t15" to-position="1" resolved="yes">
+      <change idref="t16" attribute="effort" type="real" from="28800" to="115200"/>
+      <change idref="t16" attribute="noEarlierThanConstraintDate" type="date" to="2014-07-01T00:00:00.000Z"/>
+      <change idref="t16" attribute="title" type="string" to="创建网站基本框架"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Jinqn" date="2014-06-30T07:05:14.730Z" timestamp="2014-06-30T07:05:14.730Z">
+    <change idref="t16" attribute="title" type="string" from="创建网站基本框架" to="创建网站基本架子" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Jinqn" date="2014-06-30T07:26:09.709Z" timestamp="2014-06-30T07:26:09.709Z">
+    <change idref="t19" to="t15" to-position="2" resolved="yes">
+      <change idref="t19" attribute="title" type="string" to="整合FlexUI和ueditor"/>
+    </change>
+    <change idref="t17" to="t15" to-position="3" resolved="yes">
+      <change idref="t17" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t17" attribute="internalAssignments" type="string" from="" to="3"/>
+      <change idref="t17" attribute="noEarlierThanConstraintDate" type="date" to="2014-07-28T00:00:00.000Z"/>
+      <change idref="t17" attribute="title" type="string" to="上线前测试和回归"/>
+    </change>
+    <change idref="t18" to="t15" to-position="4" resolved="yes">
+      <change idref="t18" attribute="internalAssignments" type="string" from="" to="3"/>
+      <change idref="t18" attribute="title" type="string" to="准备"/>
+    </change>
+    <change idref="t16" attribute="internalAssignments" type="string" from="" to="3" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Jinqn" date="2014-06-30T07:27:25.084Z" timestamp="2014-06-30T07:27:25.084Z">
+    <change idref="t21" to="t15" to-position="2" resolved="yes">
+      <change idref="t21" attribute="effort" type="real" from="28800" to="86400"/>
+      <change idref="t21" attribute="noEarlierThanConstraintDate" type="date" to="2014-07-04T00:00:00.000Z"/>
+      <change idref="t21" attribute="title" type="string" to="实现已上传文件管理"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Jinqn" date="2014-06-30T07:29:30.064Z" timestamp="2014-06-30T07:29:30.064Z">
+    <change idref="t22" to="t15" to-position="3" resolved="yes">
+      <change idref="t22" attribute="noEarlierThanConstraintDate" type="date" to="2014-07-08T00:00:00.000Z"/>
+      <change idref="t22" attribute="title" type="string" to="已上传文件管理"/>
+    </change>
+    <change idref="t23" to="t15" to-position="4" resolved="yes">
+      <change idref="t23" attribute="title" type="string" to="文件分享"/>
+    </change>
+    <change idref="t21" attribute="title" type="string" from="实现已上传文件管理" to="添加社会化登录" resolved="yes"/>
+    <change idref="t21" attribute="effort" type="real" from="86400" to="57600" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Jinqn" date="2014-06-30T07:33:38.761Z" timestamp="2014-06-30T07:33:38.761Z">
+    <change idref="t12" attribute="noEarlierThanConstraintDate" type="date" from="2014-07-15T01:00:00.000Z" to="2014-07-16T01:00:00.000Z" resolved="yes"/>
+    <change idref="t18" from="t15" from-position="7" resolved="yes">
+      <change idref="t18" attribute="internalAssignments" type="string" from="" to="3"/>
+      <change idref="t18" attribute="title" type="string" to="准备"/>
+    </change>
+    <change idref="t19" attribute="effort" type="real" from="28800" to="115200" resolved="yes"/>
+    <change idref="t19" attribute="noEarlierThanConstraintDate" type="date" to="2014-07-10T00:00:00.000Z" resolved="yes"/>
+    <change idref="t21" attribute="noEarlierThanConstraintDate" type="date" from="2014-07-04T00:00:00.000Z" to="2014-07-03T00:00:00.000Z" resolved="yes"/>
+    <change idref="t22" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+    <change idref="t22" attribute="noEarlierThanConstraintDate" type="date" from="2014-07-08T00:00:00.000Z" to="2014-07-07T00:00:00.000Z" resolved="yes"/>
+    <change idref="t23" attribute="effort" type="real" from="28800" to="57600" resolved="yes"/>
+    <change idref="t23" attribute="noLaterThanConstrainedTaskEnd" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t23" attribute="noEarlierThanConstraintDate" type="date" to="2014-07-08T00:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Jinqn" date="2014-06-30T07:33:41.985Z" timestamp="2014-06-30T07:33:41.985Z">
+    <change idref="t23" attribute="title" type="string" from="文件分享" to="实现文件分享" resolved="yes"/>
+  </task-change-set>
+  <resource-change-set user="Jinqn" date="2014-06-30T06:34:56.844Z" timestamp="2014-06-30T06:34:56.844Z">
+    <change idref="r2" to="r-1" to-position="1" resolved="yes">
+      <change idref="r2" attribute="name" type="string" to="韩聪"/>
+    </change>
+    <change idref="r3" to="r-1" to-position="2" resolved="yes">
+      <change idref="r3" attribute="name" type="string" to="金泉"/>
+    </change>
+    <change idref="r4" to="r-1" to-position="3" resolved="yes">
+      <change idref="r4" attribute="name" type="string" to="战毅"/>
+    </change>
+    <change idref="r1" attribute="name" type="string" from="Resource 1" to="家鸣" resolved="yes"/>
+  </resource-change-set>
+  <metadata-change-set user="campaign" date="2014-06-30T05:27:32.943Z" timestamp="2014-06-30T05:27:32.943Z">
+    <change idref="m1" attribute="fixedDate" type="date" from="2007-01-01T20:00:00.000Z" to="2014-06-30T00:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
+</changelog>

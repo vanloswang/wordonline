@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="bv3vydkAjOH">
+  <start-date>2014-06-30T00:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t4294967294">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967293">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967292">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r4294967294">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967293">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967292">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967291">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+    <child-resource idref="r4"/>
+  </resource>
+  <resource id="r1">
+    <name>家鸣</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>韩聪</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>金泉</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r4">
+    <name>战毅</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t8"/>
+    <child-task idref="t14"/>
+    <child-task idref="t15"/>
+    <child-task idref="t12"/>
+    <child-task idref="t13"/>
+  </task>
+  <task id="t2">
+    <title>社会化代码</title>
+    <effort>28800</effort>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t8">
+    <title>社会化代码</title>
+    <type>group</type>
+    <child-task idref="t2"/>
+  </task>
+  <task id="t10">
+    <title>FlexUI</title>
+    <effort>28800</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t11">
+    <title>rtcs服务压力测试</title>
+    <effort>115200</effort>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t12">
+    <title>chorme下可以看整体效果</title>
+    <type>milestone</type>
+    <start-constraint-date>2014-07-16T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2014-07-16T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t13">
+    <title>发布第一个版本</title>
+    <type>milestone</type>
+    <start-constraint-date>2014-07-31T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2014-07-31T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t14">
+    <title>FlexUI</title>
+    <type>group</type>
+    <child-task idref="t10"/>
+  </task>
+  <task id="t15">
+    <title>word项目整体集成</title>
+    <type>group</type>
+    <child-task idref="t11"/>
+    <child-task idref="t16"/>
+    <child-task idref="t21"/>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+    <child-task idref="t19"/>
+    <child-task idref="t17"/>
+  </task>
+  <task id="t16">
+    <title>创建网站基本架子</title>
+    <effort>115200</effort>
+    <start-constraint-date>2014-07-01T00:00:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2014-07-01T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t17">
+    <title>上线前测试和回归</title>
+    <effort>86400</effort>
+    <start-constraint-date>2014-07-28T00:00:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2014-07-28T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t19">
+    <title>整合FlexUI和ueditor</title>
+    <effort>115200</effort>
+    <start-constraint-date>2014-07-10T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2014-07-10T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t21">
+    <title>添加社会化登录</title>
+    <effort>57600</effort>
+    <start-constraint-date>2014-07-03T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2014-07-03T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t22">
+    <title>已上传文件管理</title>
+    <effort>57600</effort>
+    <start-constraint-date>2014-07-07T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2014-07-07T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t23">
+    <title>实现文件分享</title>
+    <effort>57600</effort>
+    <start-constraint-date>2014-07-08T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2014-07-08T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
