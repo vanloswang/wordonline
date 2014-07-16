@@ -33,7 +33,7 @@ wordonline 计划实现一个可以在线编辑文档、管理文档、分享或
 
 网盘文件的操作，统一往后端提交请求，后端对请求做代理，返回请求结果给前端。
 
-请求格式参考了网盘API [PCS_INNER_API](http://wiki.babel.baidu.com/twiki/bin/view/Com/Main/PCS_INNER_API)
+请求格式参考网盘PCS API [PCS_INNER_API](http://wiki.babel.baidu.com/twiki/bin/view/Com/Main/PCS_INNER_API)
 
 代理接口包括以下几个：
 
