@@ -1,4 +1,4 @@
-WordOnline 前后端对接说明
+wordonline 前后端对接说明
 ==========
 
 ## 1 背景
@@ -33,7 +33,7 @@ wordonline 计划实现一个可以在线编辑文档、管理文档、分享或
 
 网盘文件的操作，统一往后端提交请求，后端对请求做代理，返回请求结果给前端。
 
-请求格式参考网盘PCS API [PCS_INNER_API](http://wiki.babel.baidu.com/twiki/bin/view/Com/Main/PCS_INNER_API)
+请求格式参考网盘pcs api [pcs_inner_api](http://wiki.babel.baidu.com/twiki/bin/view/com/main/pcs_inner_api)
 
 代理接口包括以下几个：
 
@@ -84,7 +84,7 @@ wordonline 的文档使用个人云存储，保存在网盘 `/apps/wordonline` �
 如果网盘提供了支持：
 
 1. 分享文档和权限验证的过程可通过网盘接口完成。
-2. 文档阅读操作，可以根据网盘文件的 `ACL`，判断已登录用户的权限，返回bdjson给前端。
+2. 文档阅读操作，可以根据网盘文件的 `acl`，判断已登录用户的权限，返回bdjson给前端。
 
 如果网盘不提供支持：
 
