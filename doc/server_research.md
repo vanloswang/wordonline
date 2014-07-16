@@ -23,6 +23,8 @@ wordonline 计划实现一个可以在线编辑文档、管理文档、分享或
 4. 分享文件（公开/私密）
 5. 共享文档（协同编辑）
 
+![server.png](images/server.png)
+
 ## 3 登录passport
 
 使用百度passport帐号登录，需要提交[申请](http://passport.sys.baidu.com)
