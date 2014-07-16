@@ -27,7 +27,7 @@ wordonline 计划实现一个可以在线编辑文档、管理文档、分享或
 
 ## 3 登录passport
 
-使用百度passport帐号登录，需要提交[申请](http://passport.sys.baidu.com)
+网盘文件存取需要百度帐号的登录状态，以第三方的身份登录会多一个步骤，wordonline选择使用百度passport帐号登录，需要提交[申请](http://passport.sys.baidu.com)
 
 ## 4 网盘文件常规操作
 
