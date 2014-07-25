@@ -1,0 +1,22 @@
+/* 颜色菜单 */
+
+.wo-btn{
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    margin: 0 2px 0 0!important;
+}
+
+.wo-btn .fui-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+}
+
+/* 按钮背景 */
+.wo-btn-fore .fui-icon{
+    background-image: url(../../images/icons/undo.png);
+}
+.wo-btn-backcolor .fui-icon{
+    background-image: url(../../images/icons/undo.png);
+}

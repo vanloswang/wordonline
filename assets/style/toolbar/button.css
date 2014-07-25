@@ -1,0 +1,322 @@
+.wo-btn{
+    padding: 2px;
+    margin: 0 0 0 2px;
+}
+
+.wo-btn .fui-label{
+    text-align: center;
+}
+.wo-btn .fui-icon{
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* 按钮背景 */
+.wo-btn-undo .fui-icon{
+    background-image: url(../../images/icons/undo.png);
+}
+.wo-btn-redo .fui-icon{
+    background-image: url(../../images/icons/redo.png);
+}
+.wo-btn-copy .fui-icon{
+    background-image: url(../../images/icons/copy.png);
+}
+.wo-btn-cut .fui-icon{
+    background-image: url(../../images/icons/cut.png);
+}
+.wo-btn-paste .fui-icon{
+    background-image: url(../../images/icons/paste.png);
+}
+.wo-btn-removeformat .fui-icon{
+    background-image: url(../../images/icons/removeformat.png);
+}
+.wo-btn-autotypeset .fui-icon{
+    background-image: url(../../images/icons/autotypeset.png);
+}
+.wo-btn-formatmatch .fui-icon{
+    background-image: url(../../images/icons/formatmatch.png);
+}
+.wo-btn-upsize .fui-icon{
+    background-image: url(../../images/icons/upsize.png);
+}
+.wo-btn-downsize .fui-icon{
+    background-image: url(../../images/icons/downsize.png);
+}
+.wo-btn-subscript .fui-icon{
+    background-image: url(../../images/icons/subscript.png);
+}
+.wo-btn-superscript .fui-icon{
+    background-image: url(../../images/icons/superscript.png);
+}
+.wo-btn-bold .fui-icon{
+    background-image: url(../../images/icons/bold.png);
+}
+.wo-btn-italic .fui-icon{
+    background-image: url(../../images/icons/italic.png);
+}
+.wo-btn-underline .fui-icon{
+    background-image: url(../../images/icons/underline.png);
+}
+.wo-btn-strikethrough .fui-icon{
+    background-image: url(../../images/icons/strikethrough.png);
+}
+.wo-btn-forecolor .fui-icon{
+    background-image: url(../../images/icons/forecolor.png);
+}
+.wo-btn-backcolor .fui-icon{
+    background-image: url(../../images/icons/backcolor.png);
+}
+.wo-btn-blockquote .fui-icon{
+    background-image: url(../../images/icons/blockquote.png);
+}
+.wo-btn-justifyleft .fui-icon{
+    background-image: url(../../images/icons/justify-left.png);
+}
+.wo-btn-justifycenter .fui-icon{
+    background-image: url(../../images/icons/justify-center.png);
+}
+.wo-btn-justifyright .fui-icon{
+    background-image: url(../../images/icons/justify-right.png);
+}
+.wo-btn-justifyjustify .fui-icon{
+    background-image: url(../../images/icons/justify-justify.png);
+}
+
+/* 插入相关图标 */
+.wo-btn-horizontal .fui-icon{
+    background-image: url(../../images/icons/horizontal.png);
+}
+.wo-btn-insertlink .fui-icon{
+    background-image: url(../../images/icons/link.png);
+}
+.wo-btn-unlink .fui-icon{
+    background-image: url(../../images/icons/unlink.png);
+}
+.wo-btn-spechars .fui-icon{
+    background-image: url(../../images/icons/spechars.png);
+}
+.wo-btn-activemap .fui-icon{
+    background-image: url(../../images/icons/activemap.png);
+}
+.wo-btn-attachment .fui-icon{
+    background-image: url(../../images/icons/attach.png);
+}
+.wo-btn-staticmap .fui-icon{
+    background-image: url(../../images/icons/staticmap.png);
+}
+.wo-btn-insertimage .fui-icon{
+    background-image: url(../../images/icons/image.png);
+}
+.wo-btn-insertmusic .fui-icon{
+    background-image: url(../../images/icons/audiolink.png);
+}
+.wo-btn-insertvideo .fui-icon{
+    background-image: url(../../images/icons/videolink.png);
+}
+.wo-btn-insertcode .fui-icon{
+    background-image: url(../../images/icons/code.png);
+}
+.wo-btn-inserttable .fui-icon{
+    background-image: url(../../images/icons/inserttable.png);
+}
+.wo-btn-deletetable .fui-icon{
+    background-image: url(../../images/icons/deletetable.png);
+}
+.wo-btn-insertformula .fui-icon{
+    background-image: url(../../images/icons/formula.png);
+}
+.wo-btn-insertcomment .fui-icon{
+    background-image: url(../../images/icons/comment.png);
+}
+.wo-btn-source .fui-icon{
+    background-image: url(../../images/icons/source.png);
+}
+.wo-btn-drafts .fui-icon{
+    background-image: url(../../images/icons/drafts.png);
+}
+.wo-btn-wordcount .fui-icon{
+    background-image: url(../../images/icons/wordcount.png);
+}
+.wo-btn-directory .fui-icon{
+    background-image: url(../../images/icons/directory.png);
+}
+.wo-btn-showcomment .fui-icon{
+    background-image: url(../../images/icons/showcomment.png);
+}
+.wo-btn-preview .fui-icon{
+    background-image: url(../../images/icons/preview.png);
+}
+.wo-btn-print .fui-icon{
+    background-image: url(../../images/icons/print.png);
+}
+.wo-btn-search .fui-icon{
+    background-image: url(../../images/icons/search.png);
+}
+.wo-btn-importword .fui-icon{
+    background-image: url(../../images/icons/word.png);
+}
+.wo-btn-importtxt .fui-icon{
+    background-image: url(../../images/icons/txt.png);
+}
+.wo-btn-exportword .fui-icon{
+    background-image: url(../../images/icons/word.png);
+}
+.wo-btn-exportpdf .fui-icon{
+    background-image: url(../../images/icons/pdf.png);
+}
+.wo-btn-exporttxt .fui-icon{
+    background-image: url(../../images/icons/txt.png);
+}
+.wo-btn-search .fui-icon{
+    background-image: url(../../images/icons/search.png);
+}
+.wo-btn-search .fui-icon{
+    background-image: url(../../images/icons/search.png);
+}
+.wo-btn-search .fui-icon{
+    background-image: url(../../images/icons/search.png);
+}
+.wo-btn-coordination .fui-icon{
+    background-image: url(../../images/icons/coordination.png);
+}
+.wo-btn-share .fui-icon{
+    background-image: url(../../images/icons/share.png);
+}
+.wo-btn-interduction .fui-icon{
+    background-image: url(../../images/icons/interduction.png);
+}
+.wo-btn-shortcutkey .fui-icon{
+    background-image: url(../../images/icons/keyboard.png);
+}
+.wo-btn-aboutus .fui-icon{
+    background-image: url(../../images/icons/aboutus.png);
+}
+
+.wo-btn-insertparagraphbeforetable .fui-icon,
+.wo-btn-insertrow .fui-icon,
+.wo-btn-deleterow .fui-icon,
+.wo-btn-insertcol .fui-icon,
+.wo-btn-deletecol .fui-icon,
+.wo-btn-deletecol .fui-icon,
+.wo-btn-deletecol .fui-icon,
+.wo-btn-deletecol .fui-icon,
+.wo-btn-deletecol .fui-icon,
+.wo-btn-deletecol .fui-icon,
+.wo-btn-deletecol .fui-icon,
+.wo-btn-mergecells .fui-icon,
+.wo-btn-mergedown .fui-icon,
+.wo-btn-mergeright .fui-icon,
+.wo-btn-splittocells .fui-icon,
+.wo-btn-splittocols .fui-icon,
+.wo-btn-splittorows .fui-icon{
+    background-image: url(../../images/icons/icons.png);
+}
+.wo-btn-insertparagraphbeforetable .fui-icon {
+    background-position: -140px -40px;
+}
+.wo-btn-insertrow .fui-icon {
+    background-position: -478px -76px;
+}
+.wo-btn-deleterow .fui-icon {
+    background-position: -660px -20px;
+}
+.wo-btn-insertcol .fui-icon {
+    background-position: -455px -76px;
+}
+.wo-btn-deletecol .fui-icon {
+    background-position: -640px -20px;
+}
+.wo-btn-mergecells .fui-icon{
+    background-position: -760px -20px;
+}
+.wo-btn-mergedown .fui-icon{
+    background-position: -80px -40px;
+}
+.wo-btn-mergeright .fui-icon{
+    background-position: -60px -40px;
+}
+.wo-btn-splittocells .fui-icon{
+    background-position: -800px -20px;
+}
+.wo-btn-splittocols .fui-icon{
+    background-position: -120px -40px;
+}
+.wo-btn-splittorows .fui-icon{
+    background-position: -100px -40px;
+}
+
+/* 大图标 */
+.wo-btn-paste .fui-icon,
+.wo-btn-spechars .fui-icon,
+.wo-btn-search .fui-icon,
+.wo-btn-insertimage .fui-icon,
+.wo-btn-insertmusic .fui-icon,
+.wo-btn-insertvideo .fui-icon,
+.wo-btn-attachment .fui-icon,
+.wo-btn-inserttable .fui-icon,
+.wo-btn-insertcode .fui-icon,
+.wo-btn-insertformula .fui-icon,
+.wo-btn-share .fui-icon,
+.wo-btn-insertcomment .fui-icon{
+    width: 32px;
+    height: 32px;
+}
+.wo-btn-drafts .fui-icon,
+.wo-btn-horizontal .fui-icon{
+    width: 40px;
+    height: 32px;
+}
+.fui-tab-content-table .wo-btn-inserttable .fui-icon,
+.wo-btn-deletetable .fui-icon,
+.wo-btn-insertmap .fui-icon,
+.wo-btn-source .fui-icon,
+.wo-btn-wordcount .fui-icon,
+.wo-btn-directory .fui-icon,
+.wo-btn-showcomment .fui-icon,
+.wo-btn-preview .fui-icon,
+.wo-btn-print .fui-icon,
+.wo-btn-search .fui-icon,
+.wo-btn-importword .fui-icon,
+.wo-btn-importtxt .fui-icon,
+.wo-btn-exportword .fui-icon,
+.wo-btn-exportpdf .fui-icon,
+.wo-btn-exporttxt .fui-icon,
+.wo-btn-interduction .fui-icon,
+.wo-btn-aboutus .fui-icon{
+    width: 48px;
+    height: 32px;
+}
+.wo-btn-coordination .fui-icon,
+.wo-btn-shortcutkey .fui-icon{
+    width: 56px;
+    height: 32px;
+}
+
+/* 特殊按钮调整 */
+.wo-btn-undo,
+.wo-btn-copy{
+    display: block;
+    border: 0;
+    margin-top: 2px!important;
+}
+.wo-btn-redo,
+.wo-btn-cut{
+    display: block;
+    border: 0;
+    margin-top: 4px!important;
+}
+.wo-btn-forecolor .fui-icon,
+.wo-btn-backcolor .fui-icon{
+    width: 26px;
+}
+
+.wo-btn-removeformat,
+.wo-btn-autotypeset,
+.wo-btn-formatmatch{
+    margin: 0 0 0 4px!important;
+    padding: 0 2px!important;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+}

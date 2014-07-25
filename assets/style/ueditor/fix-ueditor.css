@@ -1,0 +1,11 @@
+/* 编辑器 */
+.wordeditor .edui-editor {
+    -webkit-border-radius: 2px!important;
+    -moz-border-radius: 2px!important;
+    border-radius: 2px!important;
+    box-shadow: 0 0 2px 2px #eee;
+}
+.wordeditor .edui-editor-toolbarbox,
+.wordeditor .edui-editor-bottomContainer{
+    display: none;
+}

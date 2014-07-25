@@ -1,0 +1,46 @@
+/* 下拉输入框 */
+.fui-input-menu .fui-input-button{
+    border-color: #d3d3d3;
+}
+
+/* 输入框 */
+.fui-input-menu .fui-input-button .fui-input {
+    max-width: 60px;
+    height:20px;
+    padding:0 2px;
+}
+
+/* 下拉按钮 */
+.fui-input-menu .fui-button.fui-button-layout-right{
+    padding: 0!important;
+    height:20px;
+    border-left: 1px solid #d3d3d3;
+}
+.fui-input-menu .fui-button.fui-button-layout-right:HOVER{
+    border-left: 1px solid #d5e1f2;
+}
+.fui-input-menu .fui-button.fui-button-layout-right .fui-icon{
+    width: 12px;
+    height: 20px;
+    background: url(../../images/icons/small-down.png) center center no-repeat;
+}
+
+.fui-paragraph{
+    margin: 2px!important;
+}
+
+/* 设置圆角 */
+.fui-input-menu .fui-input-button{
+    border-radius: 4px;
+}
+.fui-input-menu .fui-input-button .fui-input{
+    border-radius: 4px 0 0 4px;
+}
+.fui-input-menu .fui-input-button .fui-button{
+    border-radius: 0 4px 4px 0;
+}
+
+/* 自定义 */
+.wo-input-menu-fontsize .fui-input{
+    width: 30px;
+}

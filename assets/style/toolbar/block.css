@@ -1,0 +1,35 @@
+/* label panel */
+.wo-block {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin: 4px 0;
+    height: 90px;
+}
+.wo-block .fui-label-panel-label {
+    display: block;
+    text-align: center;
+    width: auto;
+    color: #666;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 0 5px;
+}
+
+/* block样式 */
+.wo-block{
+    margin-right: 6px!important;
+}
+.wo-block .fui-label-panel-content{
+    padding: 8px 5px;
+}
+
+/* block custom */
+.wo-blockstyle .fui-label-panel-content{
+    padding: 4px 6px;
+}
+.wo-blockclipboard .wo-line{
+    padding-top: 1px;
+}
+.wo-blockfont .wo-line-2,
+.wo-blockparagraph .wo-line-2{
+    padding-top: 6px;
+}

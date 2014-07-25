@@ -1,0 +1,22 @@
+.wo-drop-panel-fontstyle{
+    height: 61px;
+}
+.wo-drop-panel-fontstyle .fui-drop-panel-content{
+    width: 308px;
+    height: 61px;
+    overflow: hidden;
+    background: url("../../images/icons/fontstyle.png") !important;
+}
+.wo-drop-panel-fontstyle .fui-drop-panel-down{
+    padding: 0!important;
+    border-left: 1px solid #d3d3d3;
+}
+.wo-drop-panel-fontstyle .fui-drop-panel-down:HOVER{
+    border-left: 1px solid #d5e1f2;
+}
+.wo-drop-panel-fontstyle .fui-drop-panel-down .fui-icon{
+    width: 15px;
+    height: 61px;
+    padding: 0!important;
+    background:  url("../../images/icons/small-down.png") no-repeat center 45px;
+}
