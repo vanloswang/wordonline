@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+    <!-- jquery -->
+    <script src="jquery-1.11.1.min.js"></script>
+
+    <!-- webuploader -->
+    <script type="text/javascript" charset="utf-8" src="webuploader/webuploader.flashonly.js"></script>
+    <link rel="stylesheet" href="webuploader/webuploader.css"/>
+</head>
+<body>
+    <div>
+        <div id="upload"></div>
+        <input type="button" id="submit" value="提交"/>
+    </div>
+
+    <script>
+        var uploader = WebUploader.create({
+            pick: {
+                id: '#upload',
+                label: ' 选择文件'
+            },
+            swf: 'webuploader/Uploader.swf',
+            server: 'http://convert.wenku.baidu.com/rtcs/convert?pn=1&rn=-1',
+            fileVal: 'file',
+            threads: 1000,
+            duplicate: true
+        });
+
+        var result = {};
+        var count = 0;
+
+        uploader.on('filesQueued', function (files){
+            count += files.length;
+        });
+
+        uploader.on('uploadBeforeSend', function (file, ret){
+            console.log('uploadBeforeSend');
+            result[file.file.id] = {
+                'status': null,
+                'return': null,
+                'success': null,
+                'blocknum': null,
+                'images': []
+            }
+        });
+
+        uploader.on('uploadSuccess', function (file, ret){
+            console.log('success');
+
+            var res = {},
+                r = ret._raw;
+
+            res['status'] = '200';
+            if (r) {
+                try {
+                    var json = eval('(' + r + ')');
+
+                    res['return'] = 'json';
+                    res['success'] = json['status'] && json['status']['success'] == true;
+
+                    if (res['success'] && json['document.xml']) {
+                        res['blocknum'] = json['document.xml'].length
+                        if (res['blocknum'] > 0) {
+                            for (var key in json['document.xml']) {
+                                try{
+                                    res['images'] = getImages(json['document.xml'][key]);
+                                }catch (e) {
+                                    debugger;
+                                }
+                            }
+                        }
+                    } else {
+                        res['blocknum'] = null;
+                    }
+                } catch (e) {
+                    res['return'] = 'string';
+                }
+            } else {
+                result[file.id]['return'] = '';
+            }
+
+            result[file.id] = res;
+        });
+
+        uploader.on('uploadError', function (file){
+        });
+
+        uploader.on('uploadComplete', function (file){
+        });
+
+        uploader.on('uploadFinish', function (file){
+        });
+
+        $('#submit').click(function(){
+            uploader.upload();
+        });
+
+        function getImages(block) {
+            var images = [];
+            if (block && block['t'] == 'img' && block['c'] && $.inArray(block['dataType'], ['jpg', 'png', 'gif', 'ico', 'bmp'])) {
+                images.push(block['c']);
+            }
+
+            if (block['c'] && $.isArray(block['c'])) {
+                for (var key in block['c']) {
+                    getImages(block['c'][key]);
+                }
+            }
+        }
+        function echo(name){
+            for (var key in result) {
+                console.log(result[key][name]);
+            }
+        }
+    </script>
+
+</body>
+</html>

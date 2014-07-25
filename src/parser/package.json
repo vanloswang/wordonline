@@ -1,0 +1,30 @@
+{
+    "name": "docparser",
+    "title": "docparser",
+    "description": "UEditor富文本web编辑器",
+    "version": "1.4.3",
+    "homepage": "http://ueditor.baidu.com/",
+    "author": {
+        "name": "f-cube @ FEX",
+        "url": "http://fex.baidu.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/fex-team/ueditor.git"
+    },
+    "keywords": [
+        "ueditor",
+        "web editor",
+        "javascript"
+    ],
+    "bugs": {
+        "url": "https://github.com/fex-team/ueditor/issues"
+    },
+    "dependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-concat": "~0.3.0"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1"
+    }
+}

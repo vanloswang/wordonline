@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+    <!-- jquery -->
+    <script src="../../lib/jquery-1.11.1.min.js"></script>
+
+    <!-- webuploader -->
+    <script type="text/javascript" charset="utf-8" src="../../ueditor/third-party/webuploader/webuploader.flashonly.js"></script>
+    <link rel="stylesheet" href="../../ueditor/third-party/webuploader/webuploader.css"/>
+    <script type="text/javascript" charset="utf-8" src="../../docparser/buttonouter.js"></script>
+</head>
+<body>
+    <div>
+        <div id="upload"></div>
+        <input type="button" id="submit" value="提交"/>
+    </div>
+
+    <script>
+        var uploader = WebUploader.create({
+            pick: {
+                id: '#upload',
+                label: ' 选择文件'
+            },
+            swf: '../ueditor/third-party/webuploader/Uploader.swf',
+            server: 'http://convert.wenku.baidu.com/rtcs/convert?pn=1&rn=-1',
+            fileVal: 'file'
+        });
+
+        uploader.on('uploadSuccess', function (file, ret){
+            console.log('success');
+        });
+
+        uploader.on('uploadError', function (file){
+            console.log('error');
+        });
+
+        uploader.on('uploadComplete', function (file){
+//            console.log('error');
+        });
+
+        $('#submit').click(function(){
+            uploader.upload();
+        });
+    </script>
+
+</body>
+</html>

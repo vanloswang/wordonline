@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+
+    <!-- jquery -->
+    <script src="../lib/jquery-1.11.1.min.js"></script>
+
+    <!-- webuploader -->
+    <script type="text/javascript" charset="utf-8" src="../lib/webuploader/webuploader.flashonly.js"></script>
+    <link rel="stylesheet" href="../lib/webuploader/webuploader.css"/>
+</head>
+<body>
+<div>
+    <div id="upload">选择文件</div>
+</div>
+
+<script>
+    var uploader = WebUploader.create({
+        pick: {
+            id: '#upload',
+            label: ' 选择文件'
+        },
+        swf: '../lib/webuploader/Uploader.swf',
+        server: 'http://convert.wenku.baidu.com/rtcs/convert?pn=1&rn=-1',
+        fileVal: 'file',
+        threads: 1000,
+        duplicate: true
+    });
+
+    var result = {};
+    var count = 0;
+
+    uploader.on('filesQueued', function (files){
+        count += files.length;
+    });
+
+    uploader.on('uploadBeforeSend', function (file, ret){
+        console.log('uploadBeforeSend');
+        result[file.file.id] = {
+            'status': null,
+            'return': null,
+            'success': null,
+            'blocknum': null,
+            'images': []
+        }
+    });
+
+    uploader.on('filesQueued', function (file, ret){
+        uploader.upload();
+    });
+
+    uploader.on('uploadSuccess', function (file, ret){
+        console.log('success');
+    });
+
+    uploader.on('uploadError', function (file){
+        console.log('error');
+    });
+
+    uploader.on('uploadComplete', function (file){
+        console.log('complete');
+    });
+
+    uploader.on('uploadFinish', function (file){
+        console.log('finish');
+    });
+</script>
+
+</body>
+</html>

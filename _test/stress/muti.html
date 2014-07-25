@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="../../lib/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div>
+    <p><input type="text" name="num" id="num" value="3" /></p>
+    <p><input type="button" id="add" value="add"/></p>
+    <p><input type="button" id="submitall" value="submitall"/></p>
+    <p><input type="button" id="selectfile" /></p>
+</div>
+
+<script>
+    var html = '<form action="http://convert.wenku.baidu.com/rtcs/convert?pn=1&rn=-1" target="_blank" method="post" enctype="multipart/form-data">' +
+            '<input type="file" name="file" class="file"/>' +
+            '<input type="submit" class="submit" value="提交"/>' +
+            '</form>';
+
+    $('#add').click(function(){
+        var num = $('#num').val();
+        for (var i = 0; i < num; i++) {
+            $form = $('<form action="http://convert.wenku.baidu.com/rtcs/convert?pn=1&rn=-1" target="newtab' + i + '" method="post" enctype="multipart/form-data">' +
+            '<input type="file" name="file" class="file"/>' +
+            '<input type="submit"  value="提交"/>' +
+            '</form>').appendTo(document.body);
+        }
+    });
+    $('#submitall').click(function(){
+        $('form').each(function(i, $item){
+            $item.submit();
+        });
+    });
+</script>
+
+</body>
+</html>
